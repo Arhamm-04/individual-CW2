@@ -1,0 +1,13 @@
+{% extends 'api/layout.html' %}
+
+{% block title %} add workout {% endblock %}
+
+{% block body %}
+<h1>Add workout</h1>
+<form action="{% url 'api:add workout' %}" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+
+</form>
+{% endblock %}

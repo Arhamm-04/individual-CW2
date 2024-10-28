@@ -1,0 +1,11 @@
+{% extends 'api/layout.html' %}
+
+{% block title %} view exercises {% endblock %}
+
+{% block body %}
+    <ul>
+        {% for exercise in exercises %}
+        <li>{{ exercise }}</li>
+        {%endfor%}
+    </ul>
+{% endblock %}
