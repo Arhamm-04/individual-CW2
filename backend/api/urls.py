@@ -21,8 +21,7 @@ app_name = 'api'
 urlpatterns = [
     # API entry points should be defined here
     path('test.json', views.test_api_view, name='api test'),
-    path('viewExercises', views.view_exercises, name = 'view exercises'),
-    path('viewWorkouts', views.view_workouts, name = 'view workouts'),
-    path('addWorkout', views.add_workout, name='add workout'),
-    path('addExercise', views.add_exercise, name='add exercise')
+    path('exercise-api-view', views.exercise_api_view, name='exercise api view'),
+    path('workout-api-view', views.workout_api_view, name= 'workout api view'),
+    path('workout-exercise-view', views.workout_exercise_api_view, name='workout exercise api view')
 ]
